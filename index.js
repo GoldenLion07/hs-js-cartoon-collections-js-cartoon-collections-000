@@ -28,8 +28,8 @@ function findTheCheese (foods) {
   for (var i = 0; i < foods.length ; i++) { //iterate through that array
     var cheeseIndex = cheese.indexOf(foods[i]); //indexOf() method searches for a specific element
     if(cheeseIndex !== -1) {
-      return foods[i]
+      return foods[i] //return our entire foods array
     }
   }
-  return "no cheese!"
+  return "no cheese!" //else case it returns 'no cheese!'
 }
