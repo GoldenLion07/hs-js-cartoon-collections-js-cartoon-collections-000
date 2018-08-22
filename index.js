@@ -1,17 +1,17 @@
 function dwarfRollCall(dwarves) {
-  var newStr = []
+  var string = "";
   dwarves.forEach(function(name, i) {
-    newStr.push(i + 1 + '. ' + name)
+  	string += (i+1 + ". " + name + " ");
   });
-  return newStr.join(" ")
+  return string;
 }
 
 function summonCaptainPlanet(planeteerCalls){
-  let summon = [];
-  for (var i = 0; i < planeteerCalls.length; i++) {
-    summon.push(planeteerCalls[i].toUpperCase() + "!")
+  let summon = []; //defined new variable initialized to new array []
+  for (var i = 0; i < planeteerCalls.length; i++) { //iterate through our calls
+    summon.push(planeteerCalls[i].toUpperCase() + "!") //add new words to end of our array, capitalize, and concatenate exclamation point.
   }
-  return summon;
+  return summon; 
 }
 
 function longPlaneteerCalls(words) {
@@ -24,10 +24,10 @@ function longPlaneteerCalls(words) {
 }
 
 function findTheCheese (foods) {
-  var cheese = ['camembert', 'cheddar', 'gouda']
-  for (var i = 0; i < foods.length ; i++) {
-    var cheeseIdx = cheese.indexOf(foods[i]);
-    if(cheeseIdx !== -1) {
+  var cheese = ['camembert', 'cheddar', 'gouda'] //array containing only 3 cheeses
+  for (var i = 0; i < foods.length ; i++) { //iterate through that array
+    var cheeseIndex = cheese.indexOf(foods[i]); //indexOf() method searches for a specific element
+    if(cheeseIndex !== -1) {
       return foods[i]
     }
   }
