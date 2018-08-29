@@ -2,7 +2,7 @@ function dwarfRollCall(dwarves) {
 
   var string = "";
   dwarves.forEach(function(element, index) { //forEach is a callback, takes two parameters.
-  	string += (i+1 + ". " + element + " ");
+  	string += (index+1 + ". " + element + " ");
   });
   return string;
 }
