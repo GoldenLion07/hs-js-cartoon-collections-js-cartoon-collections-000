@@ -7,6 +7,16 @@ function dwarfRollCall(dwarves) {
   return string;
 }
 
+function dwarfRollCall(dwarves) {
+  var string = "";
+  
+  for (let i = 0; i < dwarves.length / 2; i++) {
+  	string += (index+1 + ". " + element + " ");
+  }
+  
+  return string;
+}
+//how do we change the function to admit the second half in.
 //forEach method only works on arrays, it takes element and index or if renamed, name and i(index).
 //This function takes the dwarves array as a parameter, returns a string that is a numbered list based on an array. 
 //Analogy, Snow White's posse rolls up to the club and it's a busy night. The lines are long and the dwarves are on the VIP list, so the bouncer admits them based on their position in line. 
@@ -46,6 +56,15 @@ function findTheCheese (foods) {
   return "no cheese!" //else case it returns 'no cheese!'
 }
 
+function wordsWithB(words) {
+  var newArr = []
+  for (var i = 0; i < words.length; i++) {
+    if (words[i][0] === 'b') {
+       newArr.push(words[i])
+      }
+      }
+      return newArr
+}
 //findTheCheese takes an array of strings and searches for an element that is a cheese.
 //create a new array containing three types of cheeses
 //loop through that array => use new variable and set it equal to array => attach method that searches array for the element (Cheddar)
