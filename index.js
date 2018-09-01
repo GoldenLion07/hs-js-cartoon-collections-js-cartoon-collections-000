@@ -2,7 +2,7 @@ function dwarfRollCall(dwarves) {
 
   var string = "";
   dwarves.forEach(function(element, index) { //forEach is a callback, takes two parameters.
-<<<<<<< HEAD
+
   	string += (index+1 + ". " + element + " ");
   });
   return string;
@@ -22,13 +22,13 @@ function dwarfRollCall(dwarves) {
 //This function takes the dwarves array as a parameter, returns a string that is a numbered list based on an array. 
 //Analogy, Snow White's posse rolls up to the club and it's a busy night. The lines are long and the dwarves are on the VIP list, so the bouncer admits them based on their position in line. 
 
-=======
+
   	string += (i+1 + ". " + element + " ");
   });
   return string;
 }
 //forEach method only works on arrays, it takes element and index or if renamed, name and i(index).
->>>>>>> 757e108b2e4a9f5d455bc06ae76d38f2018f3b55
+
 function summonCaptainPlanet(planeteerCalls){
   let summon = []; //defined new variable initialized to new array []
   for (var i = 0; i < planeteerCalls.length; i++) { //iterate through our calls
